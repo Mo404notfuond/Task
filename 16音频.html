@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+    <!--文字滑动标签-->
+    <marquee style="width: 30%"> 文字滑动</marquee></br>
+
+    <!--删除线-->
+    <del>不熬夜</del>
+</br>
+
+<!--     设置鼠标形状-->
+<!--设置删除 链接下划线-->
+     <a href="http://baidu.com"   style="cursor:hand ;text-decoration: none">手的形状</a> 
+     <a  href="http://baidu.com"   style="cursor:crosshair">十字形</a>
+     <a  href="http://baidu.com"   style="cursor:text" >文本型</a>
+     <a  href="http://baidu.com"   style="cursor:wait">沙漏型</a>
+     <a  href="http://baidu.com"   style="cursor:move">十字键头</a>
+     <a  href="http://baidu.com"   style="cursor:help">问号型</a>
+     <a  href="http://baidu.com"   style="cursor:nw-resize">箭头</a></br>
+
+<!--图片  alt 图片无法显示的文字?   target 定义链接打开方式： _blank   _parent  _self _top -->
+     <a href="https://www.w3cschool.cn" target="" >
+     <img src="E:/ps_practise/pika.jpg"  alt="皮卡丘" style="width:250px;height:180px" tar>
+     </a>
+     <br/>
+
+
+<!--视频 只支持三种格式MP4 WEBM OGG
+    autoplay自动播放
+    controls显示暂停播放等控件 
+    loop 设置循环播放     muted 设置静音
+    poster 视频播放前的图片
+-->
+     <video width="320" height="240" controls  poster="E:/ps_practise/pika.jpg"> 
+         <source src="E:/解压专用/课程回顾视频 (1)/13_中午课程回顾.mp4" type="video/mp4">
+     </video>
+    </br>
+    
+    <!-- 音频播放-->
+     <audio controls  >
+        <source src="E:/HTML/horse.ogg" type="audio/ogg">
+        <source src="E:/HTML/horse.mp3" type="audio/mpeg">
+      您的浏览器不支持 audio 元素。
+      </audio>
+    
+
+<!--
+     js自定义 播放 暂停 放大缩小等按钮
+
+     <div >
+         <button onclick="stop()">播放/暂停</button>
+         <button onclick="big()">放大</button>
+         <button onclick="small()">缩小</button>
+         <button onclick="normal()">正常</button>
+     </br>
+     <video id="setVideo" width="300">
+         <source src="E:/解压专用/课程回顾视频 (1)/13_中午课程回顾.mp4" type="video/mp4">
+     </video>
+     </div>
+
+      --由于js执行顺序问题目前js只在buttom后面有效，待查放在head时
+
+     <script>
+            var setVideo=document.getElementById("setVideo");
+            function stop(){
+                if(setVideo.paused)
+                setVideo.play();
+                else
+                video.pause();
+            }
+            function big(){
+                setVideo.width=500;
+            }
+           function small(){
+               setVideo.width=200;
+           }
+            
+            </script>
+
+        -->
+
+
+     
+</body>
+</html>

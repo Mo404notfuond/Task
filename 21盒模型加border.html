@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!--鼠标点击 盒子 显示透明边框。（盒子大小不改变） -->
+<style>
+
+
+img{
+    width: 500px;
+    height: 350px;
+}
+
+div{
+    width: 500px;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+div:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:500px;
+    height: 350px;
+    border: 10px solid pink;
+    margin: 0;
+    box-sizing: border-box;
+}
+</style>
+
+<!-- 1.直接用div：hover 肯定是不行的，因为border把盒子撑大；高度会掉下-->
+<!--  2.所以考虑用伪元素做把border加在盒子里面，border是盒子里面的内容就不会下陷。position调整位置-->
+<!--    3 .box-sizing 负责调整内容盒子大小保持不变-->
+<body>
+    <div >
+        <img src="images/moss.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+    .box{
+        font-size: 14px;
+        width: 400px;
+
+    }
+    dl{
+        display: block;
+        overflow: hidden;
+        margin: 20px auto;
+    }
+  dt{
+      width: 80px;
+      margin-right: 10px;
+      text-align: right;
+      line-height: 30px;
+  }
+    dt, dd {
+        float: left;
+    }
+
+    dd{
+        margin-right: 5px;
+        line-height: 30px;
+    }
+    input {
+      border-radius: 5px;
+      width: 300px;
+      height: 30px;
+    
+    }
+.inpput{
+    width: 185px;
+    margin-right: 10px;
+}
+
+select{
+    height: 30px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+}
+
+#submit{
+    margin: 0 200px;
+    width: 80px;
+    height: 35px;
+    color: #fff;
+    background-color: rgb(64, 146, 69);
+    border-radius: 10px;
+}
+
+dt span{
+    color: rgb(243, 33, 33);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="box">
+           <h3>用户注册</h3>
+            <dl>
+                <dt><span>*</span>邮件地址</dt>
+                    <dd class="inpput"><input type="text" class="inpput" placeholder="请输入邮箱"></dd>
+                    <dd >@</dd>
+                    <dd>
+                        <select name="" id="">
+                            <option value="163.com">163.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="qq.com" selected="selected">qq.com</option>
+                        </select>
+                    </dd>
+            </dl>
+            <dl>
+                <dt><span>*</span>密码</dt>
+                <dd><input type="password" name="" id="" placeholder="请输入密码"></dd>
+            </dl>
+            <dl>
+                    <dt><span>*</span>确认密码</dt>
+                    <dd><input type="password" name="" id=""></dd>
+            </dl>
+
+
+            <dl>
+                    <dt><span>*</span>手机号码</dt>
+                    <dd><input type="tel" name="" id="" ></dd>
+            </dl>
+            <dl>
+                    <dt><span>*</span>验证码</dt>
+                    <dd><input type="text" name="" id="" maxlength="4"></dd>
+            </dl>
+            <dl>
+                    <dt><span>*</span>短信验证码</dt>
+                    <dd><input type="number" name="" id="" maxlength="6"></dd>
+            </dl>
+           <input type="submit" value="立即注册" id="submit">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<!-- 1.给a 设置宽高后一定记得display：bolck-->
+<style>
+a{
+    width: 600px;
+    height: 370px;
+    display: block;
+    margin: 250px auto;
+    position: relative;
+}
+
+.radio{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3) url(images/start.png) no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+a:hover .radio{
+    display: block;
+}
+</style>
+
+<body>
+    <a href="">
+        <img src="images/sherlod.jpg" alt="" width="600px" height="370px">  
+        <div class="radio"></div>
+      
+    </a>
+    
+</body>
+</html>

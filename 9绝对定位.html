@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绝对定位导航栏</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+.ab{
+    position: relative;
+    width: 1202px;
+    height: 676px;
+    margin: 0 auto;
+  
+}
+ul{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -450px;
+    list-style: none;
+}
+li{
+    width: 150px;
+    height: 50px;
+    float: left; 
+
+
+}
+
+.nav1{
+    border-top-left-radius: 10px;
+}
+.nav2{
+    border-top-right-radius: 10px;
+}
+
+ li a{
+    width: 150px;
+    height: 50px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+   
+}
+
+ li a:hover{
+    background-color: #ccc;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="ab">
+        <a href="#"><img src="images/moss.jpg" alt=""></a>
+        <ul>
+            <li><a href="#" class="nav1">订单查询</a></li>
+            <li><a href="">订单查询</a></li>
+            <li><a href="">订单查询</a></li>
+            <li><a href="">订单查询</a></li>
+            <li><a href="">订单查询</a></li>
+            <li><a href="" class="nav2">订单查询</a></li>
+        </ul>
+   
+    </div>
+ 
+    
+</body>
+</html>

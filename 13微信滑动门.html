@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+        float: left;
+        margin-right: 30px;
+    }
+.nav{
+    height:500px;
+    background: url(images/wx.jpg) repeat-x;
+  
+}
+.nav a{
+    line-height: 75px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    background: url(images/to.png) no-repeat left;
+    padding-left: 15px;
+
+}
+
+.nav span{
+    line-height: 75px;
+    display: inline-block;
+    background: url(images/to.png) no-repeat right;
+    padding-right: 15px;
+ 
+}
+
+.nav a:hover , .nav a:hover span{
+    background-image: url(images/ao.png);
+}
+</style>
+<!--    1.  .nav a:hover span 鼠标放到页面上后 更改图片（设置更改右边的图片）。
+    如果只是写nav span：hover 效果是错误的，a span不会同时变样式
+    2.注意只是单纯更改图片，如果写的是background :url 会覆盖掉原来的background
+    由于其他的平铺方式 位置没有写会按照默认的形式，因此格式会乱
+
+   3. 用css精灵技术结合 position+ padding 来写；
+    重点是一定不能有宽度，有宽度就是一个固定值，没有自动滑动的效果
+    有line-height的时候可以不设高，因为会line-height会填充盒子
+
+
+-->
+<body>
+<div class="nav">
+        <ul >
+            <li>
+                <a href="#">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                    <a href="#">
+                        <span>公众平台</span>
+                    </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>技术与支持</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>公众平台</span></a>
+            </li>
+            <li>
+                <a href="#"><span>帮助与反馈</span></a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

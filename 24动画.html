@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+div{
+    width: 214px;
+    height: 214px;
+    position: relative;
+    animation: chage 2s linear infinite ;
+
+   
+}
+
+p{
+    
+    position: absolute;
+    top: 50%;
+
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+
+
+@keyframes chage{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+</style>
+
+<!-- 注意旋转的是div 还是图片   如果是div会连带着p里面的文字一起转-->
+       <!-- p设置居中的方式，1. 定位让其浮在图片上    line-height设置垂直  text-align设置水平  2.translate-->
+<body>
+    <div>
+        <img src="images/web.png" alt="">
+        <p>web前端</p>
+    </div>
+    
+</body>
+</html>

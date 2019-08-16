@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图布局</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+.tb{
+    width: 480px;
+    height: 270px;
+    margin: 100px auto 0;
+    position: relative;
+}
+
+.tb a{
+    width: 24px; 
+    height: 36px;
+    display: block;
+    background-color: brown;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+
+}
+.left {
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+
+
+.tb ol{
+    width: 70px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: 18px;
+    border-radius: 10px;
+}
+.tb ol li{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    float: left;
+    margin: 3px;
+    border-radius: 50%; 
+    cursor: pointer;   
+}
+.tb  .current{
+    background-color: #f40;
+
+}
+
+
+</style>
+
+<body>
+    <!-- 轮播图分为三部分组合  向左、向右的a标签  与下边的li  与背景图是兄弟关系，不是父子关系-->
+    <div class="tb">
+
+        <!--  为什么给图片加ul li？？？ 因为轮播图图片不只有一张·-->
+        <ul>
+          <li><img src="images/sherlod.jpg" alt="" width="480px" width="270px"></li>
+        </ul>
+
+        <!--给a设置display原因可以有 块级元素设置宽高的属性
+                相同的内容放在tb a中  不同的放在自己的类中·-->
+        <a href="" class="left">左</a>
+        <a href="" class="right">右</a>
+
+
+        <ol>
+            <!-- 这里的li无需放a 因为不是链接而且一般来说li的通用样式list-style：none写起来跟 body *等类似-->
+            <li class="current"></li><!-- 因为不是用a做的 但是要用到背景色转变，所以设置class zaicss中要考虑设置的权重，为什么设置后无效的原因-->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        
+        </ol>
+
+    </div>
+</body>
+</html>

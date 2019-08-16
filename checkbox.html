@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    function selectall(){
+        var hobby = document.getElementsByTagName("input");
+        for(var i=0;i<hobby.length;i++){
+            if(hobby[i].type =="checkbox"){
+                hobby[i].checked = true;
+            }
+        }
+    }
+
+
+    function clearall(){
+        var hobby = document.getElementsByName("hobby");
+        for(var j=0 ; j<hobby.length;j++){
+            hobby[j].checked = false;
+        }
+    }
+
+
+    function selectone(){
+        var txt= document.getElementById("txt").value;
+        var hobby = document.getElementsByName("hobby");
+        hobby[txt-1].checked = true;
+    }
+
+    </script>
+
+</head>
+<body>
+    <input type="checkbox" name="hobby" id="h1">吃饭
+    <input type="checkbox" name="hobby" id="h2">睡觉
+    <input type="checkbox" name="hobby" id="h3">游戏
+    <input type="checkbox" name="hobby" id="h4">音乐
+    <input type="checkbox" name="hobby" id="h5">舞蹈
+    <input type="button" value="全选" onclick="selectall()">
+    <input type="button" value="全不选" onclick="clearall()">
+    <input type="text" id="txt">
+    <input type="button" value="确定" onclick="selectone()">
+</body>
+</html>

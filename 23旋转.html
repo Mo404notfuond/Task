@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+div{
+    width: 296px;
+    height: 180px;
+    margin: 150px auto;
+  position: relative;
+}
+
+img{
+    width: 296px;
+    height: 180px;
+    position: absolute;
+    transition: all 2s;
+    transform-origin: left bottom;
+}
+
+div:hover img:first-child{
+    transform: rotate(-60deg);
+}
+div:hover img:nth-child(2){
+    transform: rotate(120deg);
+}
+div:hover img:nth-child(3){
+    transform: rotate(-180deg);
+}
+div:hover img:nth-child(4){
+    transform: rotate(240deg);
+}
+div:hover img:nth-child(5){
+    transform: rotate(-300deg);
+}
+div:hover img:nth-child(6){
+    transform: rotate(360deg);
+}
+
+</style>
+
+<!-- position 定位是后来居上。图片显示的先后 单独设置每一图的旋转角度-->
+<body>
+    <div>
+        <img src="images/mi.jpg" alt="">
+        <img src="images/sherlod.jpg" alt="">
+        <img src="images/mi.jpg" alt="">
+        <img src="images/mi.jpg" alt="">  
+        <img src="images/mi.jpg" alt="">
+        <img src="images/girl.jpg" alt="">
+    </div>
+</body>
+</html>
