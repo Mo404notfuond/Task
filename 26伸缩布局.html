@@ -22,13 +22,12 @@
     }
 
     header{
-       height: 100%;
-       overflow: hidden;
+       width: 100%;
     }
 
     header img{
-       height: auto;
         width: 100%;
+        height: auto;
     }
     nav{
         border:1px solid #ccc;
@@ -119,7 +118,7 @@
 
 </head>
 <body>
-    <!-- 一行一行写起，header 与nav 的高度是固定的nav有四行一行三li-->
+    <!-- 移动端排版 定宽度，高度自动，这样页面才不会变形 -->
        <!-- 给row1加border-radius时没有反应是应该加的是父盒子，所以应该加overflow-->
            <!-- 第一行内容有两行链接，做法是a链接用flex布局 -->
                <!--文字看起来比较立体   text-shadow -->
